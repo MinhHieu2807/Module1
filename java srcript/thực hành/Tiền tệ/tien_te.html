@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Dong Tien Goc</th>
+            <th>Tien Muon Doi</th>
+            <th>Sang Menh Gia</th>
+        </tr>
+            <tr>
+                <td><input type="text" id="Tien"></td>
+                  <td>
+                    <select id="From">
+                        <option value="VNĐ">VNĐ</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                 </td>     
+            <td>
+                    <select id="To">
+                        <option value="VNĐ">VNĐ</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+            </td>  
+            <td>
+                <button onclick="DoiTien()">Click De Doi</button>
+            </td>        
+            </tr>
+    </table>
+    <br>
+    <p id="Doi"></p>
+</body>
+<script src="Tien_Te.js"></script>
+</html>
