@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let doanhso, hoahong;
+    doanhso = prompt('nhập vào doanh số bán hàng: ');
+    if (doanhso >= 200) {
+        hoahong = doanhso*20/100;
+        document.write('hoa hồng của bạn là: ' + hoahong);
+    }else if (doanhso >= 100) {
+        hoahong = doanhso*10/100;
+        document.write('Hoa hồng của bạn là: ' + hoahong);
+    } else if (doanhso < 50 && doanhso >= 25) {
+        hoahong = doanhso*5/100;
+        document.write('Hoa hồng của bạn là: ' + hoahong);
+    } else if (doanhso < 25) {
+        document.write('Bạn không có hoa hồng!')
+    }
+</script>
+</html>

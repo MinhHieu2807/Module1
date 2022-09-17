@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label for="nhapso">Nhập số mét cần chuyển đổi:</label></td>
+            <td><input type="number" name="" id="nhapso"></td>
+        </tr>
+        <tr>
+            <td><label for="ketqua">Kết quả:</label></td>
+            <td><input type="text" readonly id="ketqua" ></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button onclick="check()"> Chuyển đổi</button></td>
+        </tr>
+        
+        </table>
+</body>
+<script>
+
+    function check(){
+        let nhapso = Number(document.getElementById('nhapso').value);
+        if ( nhapso >= 0){               
+         let ketqua = nhapso * 3.2808;
+        let ketqua = document.getElementById('ketqua');
+        ketqua.value = `${nhapso} mét sẽ là ${ketqua} feet`;
+        }else{
+            ketqua.value = 'Vui lòng nhập số dương!'
+        }
+    }
+</script>
+</html>

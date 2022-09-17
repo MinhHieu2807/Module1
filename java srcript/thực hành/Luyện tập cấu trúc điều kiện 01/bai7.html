@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let phut = prompt('nhập số phút đã gọi: ');
+    let phiTB = 100000;
+    let phi;
+    if (phut <= 50) {
+        phi = phiTB + (phut*550);
+        document.write('Cước phí của bạn là:' + phi + ' VND');
+    } else if (phut <= 200) {
+        phi = phiTB + (50*550) + ((phut - 50)*550);
+        document.write('Cước phí của bạn là: ' + phi + ' VND');
+    }else if (phut > 200) {
+        phi = phiTB + (50*550) + (150*550) + ((phut-200)*550);
+        document.write('Cước phí của bạn là: ' + phi + ' VND');
+    }
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onclick="return false">
+        <table>
+                <caption><h3>Kiểm tra tuổi</h3></caption>
+                <tr>
+                    <td><input type="number"equired/></td>
+                    <td><input onclick=handle() value="Submit" /></td>
+                </tr>
+        </table>
+    </form>
+</body>
+<script>
+    handle(){
+        let kq = document.getElementById('kq')
+        let c = Number(document.getElementById('c').value) ;
+
+    let id = event.srcElement.id
+    let age8 = document.querySelector('.bt-8-age').value
+            if(age8 < 120 && age8 > 0){
+                document.querySelector('.bt-8-result').innerHTML = `${age8} là tuổi một người`
+            }else{
+                document.querySelector('.bt-8-result').innerHTML = ''
+            }
+        }
+</script>
+</html>
