@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Từ muốn dịch :</td>
+                <td><label><input type="text" id="nhap"></label></td>
+                <td><label><button onclick="dichtu()">Dich</button></label></td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <p id="dich"></p>
+                    </label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function dichtu() {
+    let arr_eng = ["hello", "apple", "orange", "pen", "pencil", "book" ,"fuck" , "ok"];
+    let arr_vie = ["xin chao", "táo", "cam", "bút", "bút chì", "sách" , "nguyen ngu" , "hieu dep trai"];
+    let string = document.getElementById("nhap").value;
+    let index_eng = 0;
+    let result = "";
+    for (let i = 0; i < arr_eng.length; i++) {
+        if (string == arr_eng[i]) {
+            index_eng = i; //2
+            for (let j = 0; j < arr_vie.length; j++) {
+                if (index_eng == j) {
+                    result = arr_vie[j]; 
+                }
+            }
+        }
+    }
+    document.getElementById("dich").innerHTML = result;
+}
+    </script>
+</body>
+</html>
