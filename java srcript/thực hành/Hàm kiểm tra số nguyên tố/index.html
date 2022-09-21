@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("nhập số cần kiểm tra"));
+        isprime(number)
+        function isprime (number) {
+            let count = 0;
+            let isprime = false;
+            if (number == 0) {
+                alert(number + "không là số nguyên tố")
+            } else {
+                for (let i = 1; i <=number; i++) {
+                    if(number % i == 0) {
+                        count += 1;
+                    }
+                }
+                if (count == 2) {
+                    isprime = true
+                }
+                if(isprime) {
+                    alert(number + "là số nguyên tố")
+                } else {
+                    alert (number + "không là số nguyên tố")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
