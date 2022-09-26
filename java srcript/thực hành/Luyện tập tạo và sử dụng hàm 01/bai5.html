@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+           let text = ("Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus") 
+           let text2 = ("Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major, Leo")
+           function ngoisao_text(ngoisao) {
+            let index_text = 0;
+           let result ="" ;
+           for (let i = 0 ; i < text.length ; i++) {
+            if (ngoisao == text [i]) {
+                index_text = [i] ;
+                
+                for (let n = 0 ; n < text2.length ; n++ ) {
+                    if (index_text ==n) {
+                        result = text2[n];
+                        return result;
+                    } else {
+                        result = "Khong thay chum sao";
+                        return result;
+                    }
+                }
+            } else {
+                    result = "khong thay chum sao";
+                    return result;
+                }
+           }
+        }
+    let ngoisao = prompt ("nhap ngoi sao: ");
+    document.write(ngoisao_text(ngoisao));
+    </script>
+</body>
+</html>

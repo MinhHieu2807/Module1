@@ -24,7 +24,7 @@ function printProduct() {
         html += "<tr> " +
             "<td>" + product[i].loai + "</td>" +
             "<td>" + product[i].gia + "</td>" +
-            "<td><img width='30%' src='" + product[i].anh + "' /></td>" +
+            "<td><img width='30%' class='zoom' src='" + product[i].anh + "' /></td>" +
             "<td> <button onclick='deleteProduct(" + i + ")'>Delete</button></td>" +
             "</tr>";
 
