@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* tag body  */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    width: 100%;
+    height: 130px;
+}
+
+.menu {
+    background: url(https://bandj.vn/wp-content/uploads/2021/07/web-04-1024x276.jpg);
+    background-size: cover;
+}
+
+
+td,
+th {
+    text-align: center;
+}
+
+table {
+    background-color: white;
+}
+
+/* #id1 {
+    text-align:center; font-size: 30px;
+    background-color: cornflowerblue;
+    color: brown;
+} */
+h1 {
+    margin: 0;
+}
+
+.header-title {
+    background-color: dimgray;
+    /* color: black; */
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/* .oban {
+    background-color: white;
+} */
