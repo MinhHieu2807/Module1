@@ -49,3 +49,40 @@ h1 {
 /* .oban {
     background-color: white;
 } */
+.button {
+    padding: 5px 5px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.5;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
