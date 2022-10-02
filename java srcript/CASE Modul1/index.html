@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="imgbar">
+        <img src="https://bandj.vn/wp-content/uploads/2021/06/Denon-DJ-Vietnam-Copy-1.jpg" alt="No IMG">
+    </div>
+    <ul>
+        <li><a href="">TRANG CHỦ</a></li>
+        <li><a href="">GIỚI THIỆU</a></li>
+        <li><a href="">SẢN PHẨM</a></li>
+        <li><a href="">KHOÁ HỌC DJ</a></li>
+        <li><a href="">KHÁCH HÀNG</a></li>
+        <li><a href="">BẢO HÀNH</a></li>
+        <li><a href="">TƯ VẤN</a></li>
+    </ul>
+    <div class="product">
+        <table border="1" class="board1">
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        <h2 style="color:white ;">BẠN MUỐN BÁN THIẾT BỊ</h2>
+                    </td>
+                </tr>
+                <tr><input id="inputId" type="hidden" value =""></tr>
+                <tr>
+                    <td class="boardtd">TÊN THIẾT BỊ</td>
+                    <td class="inputtype">
+                        <input id='inputName' class="name" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boardtd"> ẢNH THIẾT BỊ </td>
+                    <td class="inputtype">
+                        <input id='inputPhoto' class="photo" type="url"></input>
+                    </td>
+                </tr>
+                <tr >
+                    <td class="boardtd">GIÁ MUỐN BÁN</td>
+                    <td class="inputtype">
+                        <input id='inputBirthday' class="text" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boardtd">TÌNH TRẠNG THIẾT BỊ</td>
+                    <td class="inputtype">
+                        <input id='inputNation' class="status" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boardtd"></td>
+                    <td class="EVENT">
+                        <button class="d-none" id="buttonsave" onclick="save()">SAVE</button>
+                        <button class="d-none" id="buttoncancel" onclick="cancel()">CANCEL</button>
+                        <button id="buttonadd" onclick="add()">CREATE</button>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        <table class="tbcase" border="1">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>TÊN THIẾT BỊ</th>
+                    <th>ẢNH THIẾT BỊ</th>
+                    <th>GIÁ MUỐN BÁN</th>
+                    <th>TÌNH TRẠNG THIẾT BỊ</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+</body>
+<script src="index.js"></script>
+</html>
