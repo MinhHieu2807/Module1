@@ -1,6 +1,6 @@
 var idRow;
 class Player{
-    constructor(id, name, photo, birthday, nation){
+    constructor(id, name, photo, number, status){
         this.id = id;
         this.name = name;
         this.photo = photo;
@@ -58,7 +58,7 @@ function add() {
         alert('Photo must url');
         return;
     }
-    let number = document.querySelector(".text").value;
+    let number = document.querySelector(".birthday").value;
     if (number.trim() == "" || number == null) {
         alert("Please re-enter your Photo");
         return;
@@ -68,7 +68,7 @@ function add() {
         alert("Please re-enter your Nation");
         return;
     }
-    players.push(new Player(index+1, name, photo, number, status));
+    players.push(new Player(index+1, name, photo, birthday, status));
     setdata(keydata, players);
     renderlistplayer();
     cancel();
@@ -105,7 +105,7 @@ function cancel() {
     document.querySelector("#inputId").value = "";
     document.querySelector(".name").value = "";
     document.querySelector(".photo").value = "";
-    document.querySelector(".text").value = "";
+    document.querySelector(".birthday").value = "";
     document.querySelector(".status").value = "";
 }
 function save(){
