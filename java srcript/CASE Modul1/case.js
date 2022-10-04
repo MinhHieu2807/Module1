@@ -98,8 +98,8 @@ function edit(id) {
     document.getElementById('inputId').value = part.id;
     document.getElementById('inputName').value = part.name;
     document.getElementById('inputPhoto').value = part.photo;
-    document.getElementById('inputNumber').value = part.birthday;
-    document.getElementById('inputStatus').value = part.nation;
+    document.getElementById('inputNumber').value = part.number;
+    document.getElementById('inputStatus').value = part.status;
 }
 function cancel() {
     document.querySelector("#inputId").value = "";
