@@ -4,58 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LÊ VĂN MINH HIẾU</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="https://mh.church/wp-content/uploads/2022/01/MH-Logo-circle-online.png">
 </head>
 <body>
     <div class="imgbar">
-        <img src="https://bandj.vn/wp-content/uploads/2021/06/Denon-DJ-Vietnam-Copy-1.jpg" alt="No IMG">
+        <img src="https://media.baotintuc.vn/Upload/EqV5H9rWgvy9oNikwkHLXA/files/Man-U-09072020-cover-2.jpeg" alt="No IMG">
     </div>
     <ul>
-        <li><a href="">TRANG CHỦ</a></li>
-        <li><a href="">GIỚI THIỆU</a></li>
-        <li><a href="">SẢN PHẨM</a></li>
-        <li><a href="">KHOÁ HỌC DJ</a></li>
-        <li><a href="">KHÁCH HÀNG</a></li>
-        <li><a href="">BẢO HÀNH</a></li>
-        <li><a href="">TƯ VẤN</a></li>
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Cửa Hàng</a></li>
+        <li><a href="">Người Hâm Mộ</a></li>
+        <li><a href="">Hỗ trợ</a></li>
+        <li><a href="">Lịch Thi Đấu</a></li>
+        <li><a href="">Mua Vé</a></li>
+        <li style="width: 15%;"><a href="">Bảng Tin Hôm Nay </a></li>
     </ul>
     <div class="product">
-        <table class="board1" border="1">
+        <table border="1" class="board1">
             <thead>
                 <tr>
                     <td colspan="2">
-                        <h2 style="color:white ;">BẠN MUỐN BÁN THIẾT BỊ</h2>
+                        <h2>TUYỂN DỤNG CẦU THỦ MỚI </h2>
                     </td>
                 </tr>
                 <tr><input id="inputId" type="hidden" value =""></tr>
                 <tr>
-                    <td class="boardtd">TÊN THIẾT BỊ</td>
+                    <td class="boardtd">Name</td>
                     <td class="inputtype">
                         <input id='inputName' class="name" type="text"></input>
                     </td>
                 </tr>
                 <tr>
-                    <td class="boardtd"> ẢNH THIẾT BỊ </td>
+                    <td class="boardtd"> Photo </td>
                     <td class="inputtype">
                         <input id='inputPhoto' class="photo" type="url"></input>
                     </td>
                 </tr>
                 <tr >
-                    <td class="boardtd">GIÁ MUỐN BÁN</td>
+                    <td class="boardtd">Birthday</td>
                     <td class="inputtype">
-                        <input id='inputNumber' class="number" type="text"></input>
+                        <input id='inputBirthday' class="birthday" type="text" min="1" max="31"></input>
                     </td>
                 </tr>
                 <tr>
-                    <td class="boardtd">TÌNH TRẠNG THIẾT BỊ</td>
+                    <td class="boardtd">Nation</td>
                     <td class="inputtype">
-                        <input id='inputStatus' class="status" type="text"></input>
+                        <input id='inputNation' class="nation" type="text"></input>
                     </td>
                 </tr>
                 <tr>
-                    <td class="boardtd"></td>
+                    <td class="boardtd">Actions</td>
                     <td class="EVENT">
                         <button class="d-none" id="buttonsave" onclick="save()">SAVE</button>
                         <button class="d-none" id="buttoncancel" onclick="cancel()">CANCEL</button>
@@ -67,18 +66,19 @@
         <table class="tbcase" border="1">
             <thead>
                 <tr>
-                    <th>STT</th>
-                    <th>TÊN THIẾT BỊ</th>
-                    <th>ẢNH THIẾT BỊ</th>   
-                    <th>GIÁ MUỐN BÁN</th>
-                    <th>TÌNH TRẠNG THIẾT BỊ</th>
-                    <th></th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Photo</th>
+                    <th>Birthday</th>
+                    <th>Nation</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-
             </tbody>
         </table>
+    </div>
 </body>
-<script src="case.js"></script>
+</body>
+<script src="index.js"></script>
 </html>
